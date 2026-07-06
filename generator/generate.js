@@ -21,6 +21,7 @@ const AFFILIATE_BOTTOM = `
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
     <li><a href="https://www.amazon.co.jp/dp/B09C3TLNWP?linkCode=ll2&tag=mirainikibouw-22" rel="nofollow" target="_blank" style="color:#1d4ed8;text-decoration:underline;">▶ 美肌の教科書【Amazon】</a></li>
     <li><a href="https://www.amazon.co.jp/s?k=%E8%84%B1%E6%AF%9B&linkCode=ll2&tag=mirainikibouw-22" rel="nofollow" target="_blank" style="color:#1d4ed8;text-decoration:underline;">▶ 脱毛関連書籍一覧【Amazon】</a></li>
+    <li><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3774934&pid=892653514" rel="nofollow" style="color:#ff0033;text-decoration:underline;">▶ 家庭用脱毛器・美容機器【Yahoo!ショッピング】</a><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3774934&pid=892653514" height="1" width="1" border="0" alt=""></li>
   </ul>
 </div>`;
 
