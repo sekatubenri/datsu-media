@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://datsu-select.com'),
   title: { default: '脱毛ナビ | 脱毛サロン比較・料金・おすすめ情報', template: '%s | 脱毛ナビ' },
   description: '脱毛サロン・医療脱毛の徹底比較。料金・効果・口コミを詳しく解説。あなたに合った脱毛方法が見つかります。',
-  verification: { google: 'XcyMImXtiMlMj5NBeiKQBcD_Vqrw3EDW0TDFBVTAtaA' },
+  verification: { google: 'TxQEgvyxbhuw2P_F5T1orlp25RLXT0A3qranYgTJPpU' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
