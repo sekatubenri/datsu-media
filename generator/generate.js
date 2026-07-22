@@ -4,7 +4,7 @@ const path = require('path');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-const SITE = { name: '脱毛ナビ', url: 'https://datsu-media.vercel.app' };
+const SITE = { name: '脱毛ナビ', url: 'https://datsu-select.com' };
 
 const AFFILIATE_TOP = `
 <div style="background:#fff0f6;border:2px solid #e879a0;border-radius:8px;padding:16px;margin:24px 0;">
