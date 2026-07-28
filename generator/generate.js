@@ -13,6 +13,7 @@ const AFFILIATE_TOP = `
     <li><a href="https://px.a8.net/svt/ejp?a8mat=DATSU_PLACEHOLDER_1" rel="nofollow" style="display:inline-block;background:#e879a0;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">▶ ミュゼプラチナム（全身脱毛）無料体験</a></li>
     <li><a href="https://px.a8.net/svt/ejp?a8mat=DATSU_PLACEHOLDER_2" rel="nofollow" style="display:inline-block;background:#db2777;color:#fff;padding:8px 16px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:14px;">▶ キレイモ（顔・VIO含む全身）初回体験</a></li>
     <li><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3775263&pid=892655307" rel="nofollow" style="display:inline-block;background:#9d174d;color:#fff;padding:8px 16px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:14px;">▶ 美容外科医も注目！ムダ毛ケア</a><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3775263&pid=892655307" height="1" width="1" border="0" alt=""></li>
+    <li><a href="//af.moshimo.com/af/c/click?a_id=5718221&p_id=7404&pc_id=21311&pl_id=93029&url=https%3A%2F%2Fmintera.base.shop%2Fitems%2F139510834" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;background:#7c3aed;color:#fff;padding:8px 16px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:14px;">▶ 毎日の体感が変わっていく！100種のイオン化ミネラル【MINTERA】</a><img src="//i.moshimo.com/af/i/impression?a_id=5718221&p_id=7404&pc_id=21311&pl_id=93029" width="1" height="1" style="border:none;" alt="" loading="lazy"></li>
   </ul>
 </div>`;
 
