@@ -27,6 +27,16 @@ const AFFILIATE_BOTTOM = `
   </ul>
 </div>`;
 
+// リンク担当（media-ops）がトピックに合わせて用意したリンク枠。無ければ従来の固定枠を使う
+function affiliateTop(topic) {
+  try {
+    const blocks = JSON.parse(fs.readFileSync(path.join(__dirname, 'affiliate-blocks.json'), 'utf-8'));
+    return blocks[topic.filename] || AFFILIATE_TOP;
+  } catch {
+    return AFFILIATE_TOP;
+  }
+}
+
 async function generateArticle() {
   const topicsPath = path.join(__dirname, '..', 'unused-topics.json');
   const contentDir = path.join(__dirname, '..', 'content');
@@ -49,7 +59,7 @@ async function generateArticle() {
       content: `あなたは脱毛比較メディア「${SITE.name}」の専門ライターです。
 SEOに最適化された脱毛情報記事を生成してください。
 
-トピック: ${topic.title}
+トピック: ${topic.title}${topic.keyword ? `\n狙う検索キーワード: ${topic.keyword}` : ''}
 カテゴリ: ${topic.category}
 
 以下のJSON形式のみで出力してください（前後に余分なテキスト不要）:
@@ -80,9 +90,9 @@ contentの要件:
 
   const article = JSON.parse(jsonMatch[0]);
   if (article.content.includes('<h2')) {
-    article.content = article.content.replace('<h2', AFFILIATE_TOP + '<h2');
+    article.content = article.content.replace('<h2', affiliateTop(topic) + '<h2');
   } else {
-    article.content = AFFILIATE_TOP + article.content;
+    article.content = affiliateTop(topic) + article.content;
   }
   article.content = article.content + AFFILIATE_BOTTOM;
 

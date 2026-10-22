@@ -22,6 +22,19 @@ jobs:
         run: npm install
         working-directory: generator
 
+      # media-ops: ネタ補充（ネタ収集担当）とリンク枠の用意（リンク担当）。失敗しても記事生成は続ける
+      - uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: sekatubenri/media-ops
+          path: .ops
+
+      - name: Prepare topics and links
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm ci --prefix .ops && node .ops/src/site/prepare.js --site datsu --dir .
+
       - name: Generate article
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
